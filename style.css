@@ -23,8 +23,8 @@ section{
     display: inline-block;          /*Permet aux images de ce suivre (Changement du flux)*/
 }
 .image{
-    width:320px;
-    margin: 5px;
+    width:auto;
+    margin: 10px;
 }
 
 
@@ -35,6 +35,9 @@ section{
     .telephone{
         display: none;
     }
+    .inner{
+       width: 49%;
+    }
 }
 @media (min-width: 1080px){
     .desktop{
@@ -42,6 +45,9 @@ section{
     }
     .tablette{
         display: none;
+    }
+    .inner{
+        width: 519px;
     }
 }
 @media (min-width: 1370px){
