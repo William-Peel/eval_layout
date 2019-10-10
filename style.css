@@ -1,0 +1,52 @@
+h1, h2{
+    text-align: center;
+}
+img{
+    width:100%;                     /*Taille de l'image à 100% afin d'être responsive. On ajustera son parent afin de modifier ça taille (class image)*/
+}
+.image{
+    width:320px;
+    display: inline-block;          /*Permet aux images de ce suivre (Changement du flux)*/
+}
+.desktopG, .desktop, .tablette{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.txtcenter{
+    margin-bottom: 10px;
+}
+section{
+    text-align: center;             /*Centre les images sur la page (J'aurais également pu créer une autre division spécialement pour centrer les images de class container)*/
+}
+@media (min-width: 768px) {         /*Mobile first, on créer l'affichage mobile 320, puis à partir de 768, les changement apparaissent*/
+    .image{
+        width:400px;
+        margin: 5px;
+    }
+    .tablette{
+        display: block;
+    }
+    .telephone{
+        display: none;
+    }
+}
+@media (min-width: 1080px){
+    .desktop{
+        display: block;
+    }
+    .tablette{
+        display: none;
+    }
+}
+@media (min-width: 1370px){
+    .desktopG{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .image{
+        width: 300px;
+    }
+}
